@@ -2,6 +2,7 @@ import './App.css';
 import React from "react";
 import QRScanner from './components/QRScanner';
 import QRPreview from './components/QRPreview';
+import proof_valid_eu_green_certificate from './zokrates_green_certificate';
 
 class App extends React.Component {
   constructor(props) {
@@ -12,7 +13,7 @@ class App extends React.Component {
   }
 
   onScan(content) {
-    console.log("On scan")
+    proof_valid_eu_green_certificate(content);
     this.setState({raw_qr_data: content})
   }
 

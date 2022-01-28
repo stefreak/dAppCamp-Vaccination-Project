@@ -5,7 +5,6 @@ class QRScanner extends React.Component {
     constructor(props) {
         super(props);
         this.handleScan.bind(this);
-        this.setState({scanning: false, cameras: -1, error: ""})
     }
 
     handleScan(content) {
