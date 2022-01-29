@@ -14,7 +14,7 @@ class QRPreview extends React.Component {
         //var decoded_data = decodeWebToken(this.props.raw_qr_data);
         //console.log(decoded_data);
         return (
-            <div>{this.props.raw_qr_data}</div>
+            <div>{this.props.qr_data}</div>
         )
     }
 }
